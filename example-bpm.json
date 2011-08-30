@@ -1,0 +1,33 @@
+{
+  "name": "example-bpm",
+  "bpm": "1.0.0",
+  "dependencies": {
+    "sproutcore": "2.0.beta3",
+    "spade": "~> 1.0"
+  },
+  "dependencies:development": {
+    "spade-qunit": "~> 1.0.0",
+    "qunit": "1.0.0"
+  },
+  "bpm:build": {
+    "bpm_libs.js": {
+      "directories": [
+        "lib"
+      ],
+      "minifier": "uglify-js"
+    },
+    "bpm_styles.css": {
+      "directories": [
+        "css"
+      ]
+    },
+    "example-bpm/bpm_tests.js": {
+      "directories": [
+        "tests"
+      ],
+      "modes": [
+        "debug"
+      ]
+    }
+  }
+}
